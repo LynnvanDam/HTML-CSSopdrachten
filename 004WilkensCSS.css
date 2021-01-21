@@ -20,21 +20,15 @@ div.wrapper {
     margin: auto;
 }
 
+article {
+    width: 500px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    float: left;
+}
+
 table {
     border: 1px solid black;
-}
-
-footer {
-    background-color: slategray;
-    padding: 10px;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-    padding: 5px;
-}
-
-h3 {
-    color: white;
+    float: right;
+    border-collapse: collapse;
 }
