@@ -1,0 +1,40 @@
+body{
+    font-family: "Arial", "sans-serif";
+}
+
+nav {
+    background-color: black;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-right: 2px solid white;
+    padding-right: 5px;
+}
+
+div.wrapper {
+    width: 1000px;
+    margin: auto;
+}
+
+table {
+    border: 1px solid black;
+}
+
+footer {
+    background-color: slategray;
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+h3 {
+    color: white;
+}
