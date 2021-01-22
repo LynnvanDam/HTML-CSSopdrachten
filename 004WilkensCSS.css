@@ -21,14 +21,44 @@ div.wrapper {
 }
 
 article {
-    width: 500px;
+    width: 49%;
     margin-bottom: 10px;
     margin-top: 10px;
+    margin-right: 2%;
     float: left;
 }
 
 table {
+    width: 49%;
+    margin-top: 10px;
     border: 1px solid black;
-    float: right;
     border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+td.green {
+    background-color: lightgreen;
+}
+
+td.blue {
+    background-color: lightblue;
+}
+
+footer {
+    padding: 10px;
+    background-color: slategray;
+    margin-top: 20px;
+}
+
+footer h3 {
+    color: aliceblue;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
 }
