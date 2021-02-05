@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-div#wrapper {
+div#wrapper, footer {
     width: 1000px;
     margin: auto;
     padding: 20px;
@@ -20,13 +20,47 @@ nav a {
 
 body {
     font-family: Arial, sans-serif;
+    line-height: 25px;
 }
 
 section.apple, section.visuals {
     width: 50%;
     float: left;
+
+}
+
+section.visuals {
+    text-align: right;
+}
+
+img.apple {
+    width: 492px;
+}
+
+img.visuals {
+    width: 450px;
+    margin-bottom: 10px;
 }
 
 article {
+    display: inline-block;
+    width: 33%;
+    padding-right: 15px;
+    vertical-align: top;
+}
 
+article:last-child {
+    padding-right: 0px;
+}
+
+article img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+footer {
+    background-color: rgb(166,166,166);
+    height: 150px;
+    color: white;
 }
