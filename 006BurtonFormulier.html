@@ -3,8 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <title>Burton Formulier</title>
+    <style>
+        div.form-group{
+            padding: 20px;
+        }
+        input, select, textarea {
+            float: right;
+        }
+        section {
+            width: 500px;
+            float: left;
+        }
+    </style>
 </head>
 <body>
+
+    <h2>Voorbeeldformulier</h2>
+
+<form action="https://www.savatarian.com/html5/form.php" method="get">
+    <section>
+    <div class="form-group">
+        <label for="voornaam">Voornaam</label>
+        <input type="text" name="voornaam" id="voornaam">
+    </div>
+    <div class="form-group">
+        <label for="tussenvoegsel">Tussenvoegsel</label>
+        <input type="text" name="achternaam" id="tussenvoegsel">
+    </div>
+    <div class="form-group">
+        <label for="achternaam">Achternaam</label>
+        <input type="text" name="achternaam" id="achternaam">
+    </div>
+    <div class="form-group">
+        <label for="geslacht">Geslacht</label>
+        <select name="geslacht" id="geslacht">
+            <option>Man</option>
+            <option>Vrouw</option>
+            <option>Anders</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="kleur-ogen">Kleur Ogen</label>
+        <select name="oogkleur" id="kleur-ogen">
+            <option>Blauw</option>
+            <option>Groen</option>
+            <option>Bruin</option>
+            <option>Anders</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="geboortdatum">Geboortedatum</label>
+        <input type="date" name="Geboortedatum" id="geboortdatum">
+    </div>
+    <div class="form-group">
+        <label for="omschrijving">Omschrijving</label>
+        <textarea name="omschrijving" id="omschrijving"></textarea>
+    </div>
+    </section>
+    <section>
+    <div>
+        <label>Lekker eten:</label> <br> <br>
+        <input type="checkbox" name="lekker-eten" value="sperciebonen">
+        <span class="checkbox">Sperciebonen</span> <br>
+        <input type="checkbox" name="lekker-eten" value="aardappelen">
+        <span class="checkbox">Aardappelen</span> <br>
+        <input type="checkbox" name="lekker-eten" value="hamburger">
+        <span class="checkbox">Hamburger</span>
+    </div>
+    </section>
+    <section>
+        <input type="submit" name="submit">
+        <input type="reset" name="reset">
+    </section>
+</form>
 
 </body>
 </html>
