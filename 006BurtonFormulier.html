@@ -7,12 +7,20 @@
         div.form-group{
             padding: 20px;
         }
+        div.form input {
+            float: none;
+        }
+        div.buttons {
+            float: bottom;
+            padding-top: 100px;
+        }
         input, select, textarea {
             float: right;
         }
         section {
             width: 500px;
             float: left;
+            padding-right: 50px;
         }
     </style>
 </head>
@@ -26,6 +34,7 @@
         <label for="voornaam">Voornaam</label>
         <input type="text" name="voornaam" id="voornaam">
     </div>
+
     <div class="form-group">
         <label for="tussenvoegsel">Tussenvoegsel</label>
         <input type="text" name="achternaam" id="tussenvoegsel">
@@ -34,14 +43,15 @@
         <label for="achternaam">Achternaam</label>
         <input type="text" name="achternaam" id="achternaam">
     </div>
-    <div class="form-group">
+
+    <div class="form">
         <label for="geslacht">Geslacht</label>
-        <select name="geslacht" id="geslacht">
-            <option>Man</option>
-            <option>Vrouw</option>
-            <option>Anders</option>
-        </select>
+        <input type="radio" name="geslacht" value="man">
+        &nbsp;Man
+        <input type="radio" name="geslacht" value="vrouw">
+        &nbsp;Vrouw
     </div>
+
     <div class="form-group">
         <label for="kleur-ogen">Kleur Ogen</label>
         <select name="oogkleur" id="kleur-ogen">
@@ -51,10 +61,12 @@
             <option>Anders</option>
         </select>
     </div>
+
     <div class="form-group">
         <label for="geboortdatum">Geboortedatum</label>
         <input type="date" name="Geboortedatum" id="geboortdatum">
     </div>
+
     <div class="form-group">
         <label for="omschrijving">Omschrijving</label>
         <textarea name="omschrijving" id="omschrijving"></textarea>
@@ -62,18 +74,19 @@
     </section>
     <section>
     <div>
+        <br>
         <label>Lekker eten:</label> <br> <br>
         <input type="checkbox" name="lekker-eten" value="sperciebonen">
-        <span class="checkbox">Sperciebonen</span> <br>
+        <span class="checkbox">Sperciebonen</span> <br><br>
         <input type="checkbox" name="lekker-eten" value="aardappelen">
-        <span class="checkbox">Aardappelen</span> <br>
+        <span class="checkbox">Aardappelen</span> <br><br>
         <input type="checkbox" name="lekker-eten" value="hamburger">
         <span class="checkbox">Hamburger</span>
     </div>
-    </section>
-    <section>
+    <div class="buttons">
         <input type="submit" name="submit">
         <input type="reset" name="reset">
+    </div>
     </section>
 </form>
 
