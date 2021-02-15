@@ -5,13 +5,18 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: rgb(249,241,235);
+    background-color: white;
     font-family: 'Raleway', sans-serif;
 }
 header {
     background-color: rgb(192,240,223);
     text-align: center;
 }
+
+div#wrapper {
+    background-color: rgb(249,241,235);
+}
+
 img#logo {
     width: 320px;
 }
@@ -36,6 +41,7 @@ ul {
     margin: 0px;
 }
 
+/* -- tablet versie -- */
 @media all and (min-width: 715px){
     ul {
         background-color: rgb(128,128,128);
@@ -45,13 +51,26 @@ ul {
         border: none;
     }
 }
+/* -- tablet versie -- */
+
+/* -- desktop versie -- */
+@media all and (min-width: 1100px){
+    ul {
+        background-color: rgb(128,128,128);
+    }
+    li {
+        display: inline-block;
+        border: none;
+    }
+}
+/* -- desktop versie -- */
 
 h3 {
     color: rgb(220,106,94);
     font-weight: 600;
 }
 
-
+/* -- tablet versie -- */
 @media all and (min-width: 715px){
     section#nieuws {
         width: 40%;
@@ -62,6 +81,28 @@ h3 {
         width: 60%;
     }
 }
+/* -- tablet versie -- */
+
+/* -- desktop versie -- */
+@media all and (min-width: 1100px){
+    section#nieuws {
+        width: 30%;
+        float: left;
+    }
+    section#instrumenten {
+        float: right;
+        width: 70%;
+    }
+    article {
+        display: inline-block;
+        width: 48%;
+        margin-right: 20px;
+    }
+    article:nth-child(even){
+        margin-right: 0px;
+    }
+}
+/* -- desktop versie -- */
 
 section, footer {
     padding: 20px;
@@ -76,3 +117,12 @@ footer {
 footer h3 {
     color: white;
 }
+
+/* -- grootste versie -- */
+@media all and (min-width: 1500px){
+    div#wrapper{
+        width: 1500px;
+        margin: auto;
+    }
+}
+/* -- grootste versie -- */
